@@ -3,10 +3,5 @@
   "outputDirectory": ".next",
   "devCommand": "next dev",
   "framework": "nextjs",
-  "regions": ["sfo1"],
-  "functions": {
-    "api/**": {
-      "maxDuration": 60
-    }
-  }
+  "regions": ["sfo1"]
 }
