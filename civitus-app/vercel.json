@@ -3,9 +3,6 @@
   "outputDirectory": ".next",
   "devCommand": "next dev",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_VERCEL_ENV": "@vercel_env"
-  },
   "regions": ["sfo1"],
   "functions": {
     "api/**": {
