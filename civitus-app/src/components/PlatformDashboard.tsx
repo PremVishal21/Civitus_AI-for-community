@@ -15,14 +15,7 @@ import {
   RefreshCw,
   Upload,
   Zap,
-  ArrowRight,
-  Terminal,
-  Copy,
-  ExternalLink,
-  Code,
-  Layers,
-  Search,
-  Sparkles
+  ArrowRight
 } from "lucide-react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";

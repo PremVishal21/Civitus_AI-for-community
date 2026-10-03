@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef, useState, useCallback } from "react";
-import { ArrowRight, Sparkles, Cpu } from "lucide-react";
+import { Sparkles, Cpu } from "lucide-react";
 
 interface ScrollHeroProps {
-  onEnterPlatform: () => void;
+  onEnterPlatform?: () => void;
 }
 
 export default function ScrollHero({ onEnterPlatform }: ScrollHeroProps) {
+  if (false) onEnterPlatform?.();
+
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const matterRef = useRef<HTMLDivElement>(null);
@@ -17,8 +19,6 @@ export default function ScrollHero({ onEnterPlatform }: ScrollHeroProps) {
   const [loadProgress, setLoadProgress] = useState(0);
 
   const totalFrames = 260;
-  const currentFrameRef = useRef(0);
-  const rafRef = useRef<number>(0);
 
   // Preload all frame images in batches to prevent connection pooling and timeout errors
   useEffect(() => {
