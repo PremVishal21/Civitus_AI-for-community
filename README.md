@@ -145,9 +145,7 @@ This project is pre-configured for seamless deployment on **Vercel** via `civitu
 
 ---
 
-## 📄 License
 
-Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
